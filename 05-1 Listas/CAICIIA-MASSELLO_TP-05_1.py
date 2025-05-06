@@ -1,10 +1,6 @@
 # 1) Crear una lista con los números del 1 al 100 que sean múltiplos de 4. Utilizar la función range.
 
-listas = []
-
-for i in range(1, 101):
-    if i % 4 == 0:
-        listas.append(i)
+listas = list(range(4, 101, 4))
 
 print(listas)
 
@@ -50,20 +46,17 @@ print(animales)
 # numeros.remove(max(numeros))
 # print(numeros)
 """
+    Crea la lista numeros con 5 elementos numericos
     Elimina de la lista al valor mas grande de la lista. En este ejemplo, el número 22.
+    Imprime la lista modificada
 """
 
 
 # 6) Crear una lista con números del 10 al 30 (incluído), haciendo saltos de 5 en 5 y mostrar por pantalla 
 # los dos primeros.
 
-lista = []
-
-for i in range(10, 31, 5):
-    lista.append(i)
-
-print(lista[0])
-print(lista[1])
+lista = list(range(10, 31, 5))
+print(lista[0:2])
 
 
 # 7) Reemplazar los dos valores centrales (índices 1 y 2) de la lista “autos” por dos nuevos valores 
